@@ -6,6 +6,7 @@ package com.blz.employeewage;
   	    public static final int IS_PART_TIME = 2;
   	    public static final int EMP_RATE_PER_HOUR = 20;
   	    public static final int NUM_OF_WORKING_DAYS= 20;
+  	    public static final int MAX_HOURS_IN_MONTH = 100;
 	    public static void main(String[] args) {
 		    int empHRs = 0;                           // Variables
   	    	int empWage = 0;                          // Variables
@@ -24,7 +25,7 @@ package com.blz.employeewage;
 	    	}      
 	            empWage= empHRs*EMP_RATE_PER_HOUR;
 	            System.out.println("empWage:"   + empWage);
-	            totalempWage= empWage*NUM_OF_WORKING_DAYS;
+	            totalempWage= empWage*MAX_HOURS_IN_MONTH*NUM_OF_WORKING_DAYS;
 	            System.out.println("totalempWage:"   + totalempWage);
 	           
 	    }
